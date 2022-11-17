@@ -26,7 +26,7 @@ public class Proveedor {
 	private String nombre;
 	
 	@OneToMany
-    @JoinColumn(name="id")
+    @JoinColumn(name="proveedor")
     private List<Suministra> suministra;
 	
 	
@@ -72,7 +72,7 @@ public class Proveedor {
 	 * @return the suministra
 	 */
 	@JsonIgnore
-	@OneToMany(fetch = FetchType.LAZY, mappedBy = "Suministra")
+	@OneToMany(fetch = FetchType.LAZY, mappedBy = "proveedor")
 	public List<Suministra> getSuministra() {
 		return suministra;
 	}

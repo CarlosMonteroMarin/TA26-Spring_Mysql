@@ -28,7 +28,7 @@ public class Pieza {
 	private String nombre;
 	
 	@OneToMany
-    @JoinColumn(name="id")
+    @JoinColumn(name="pieza")
     private List<Suministra> suministra;
 	
 
@@ -81,7 +81,7 @@ public class Pieza {
 	 * @return the suministra
 	 */
 	@JsonIgnore
-	@OneToMany(fetch = FetchType.LAZY, mappedBy = "Suministra")
+	@OneToMany(fetch = FetchType.LAZY, mappedBy = "pieza")
 	public List<Suministra> getSuministra() {
 		return suministra;
 	}

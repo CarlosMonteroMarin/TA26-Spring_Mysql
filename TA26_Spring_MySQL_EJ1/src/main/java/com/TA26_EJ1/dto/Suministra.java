@@ -105,6 +105,6 @@ public class Suministra {
 
 	@Override
 	public String toString() {
-		return "Suministra [id=" + id + ", proveedor_id=" + proveedor + ", pieza_id=" + pieza + ", precio=" + precio + "]";
+		return "Suministra [id=" + id + ", proveedor=" + proveedor + ", pieza=" + pieza + ", precio=" + precio + "]";
 	}
 }
