@@ -24,7 +24,7 @@ public class Suministra {
     private int precio;
 	 
 	@ManyToOne
-    @JoinColumn(name = "pieza")
+    @JoinColumn(name = "pieza") 
     Pieza pieza;
 	
 	@ManyToOne
